@@ -5,13 +5,13 @@ b = int(input('Введите основание системы счислени
 # 10 -> [1,0,1]
 # 10 -> 101
 s = ''
-lst = []
+# lst = []
 # != - не равно
 while n != 0:
-    ost = n % b
-    lst.append(ost)
+    ost = str(n % b)
+    s = s + ost
     n = n//b
-print(lst[::-1])
+print(s[::-1])
 
 # b - 11
 # 1b -> [1, 11]
